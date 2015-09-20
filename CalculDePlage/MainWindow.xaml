@@ -3,17 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Name="MainWindow_This"
         xmlns:local="clr-namespace:Reseau"
-        Title="MainWindow" Height="350" Width="786.093">
+        Title="MainWindow" Height="286" Width="1078.468">
     <Grid HorizontalAlignment="Left" Width="517">
-        <DataGrid x:Name="dgNbPoste" HorizontalAlignment="Left" Margin="10,10,-248,0" VerticalAlignment="Top" RenderTransformOrigin="-0.561,-3.883" Height="159" Width="755" AutoGenerateColumns="False" ItemsSource="{Binding Path=ListSousReseau}" >
+        <DataGrid x:Name="dgNbPoste" HorizontalAlignment="Left" Margin="10,10,-541,0" VerticalAlignment="Top" RenderTransformOrigin="-0.561,-3.883" Height="235" Width="1048" AutoGenerateColumns="False" ItemsSource="{Binding Path=ListSousReseau}" CanUserResizeRows="False" CanUserResizeColumns="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nom du sous reseau" Binding="{Binding NomSousReseau}" />
-                <DataGridTextColumn Header="Nombre de postes" Binding="{Binding NombreDePoste}" />
-                <DataGridTextColumn Header="Masque de sous reseau" Binding="{Binding MasqueSousReseau}" />
-                <DataGridTextColumn Header="Ip de départ" Binding="{Binding IpDepart}" />
-                <DataGridTextColumn Header="Adresse de Broadcast" Binding="{Binding AdresseBroadcast}" IsReadOnly="True" />
-                <DataGridTextColumn Header="Nombre d'adresse maximum" Binding="{Binding NombreAdresse}" IsReadOnly="True" />
-                <DataGridTextColumn Header="Pourcentage" Binding="{Binding PourcentageAdresseUtilise, Converter={StaticResource PourcentageUtiliseConverter}}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Nom du sous reseau" Binding="{Binding NomSousReseau}" Width="160" />
+                <DataGridTextColumn Header="Nombre de postes" Binding="{Binding NombreDePoste}" Width="160"/>
+                <DataGridTextColumn Header="Masque de sous reseau" Binding="{Binding MasqueSousReseau}" Width="160"/>
+                <DataGridTextColumn Header="Ip de départ" Binding="{Binding IpDepart}" Width="160"/>
+                <DataGridTextColumn Header="Adresse de Broadcast" Binding="{Binding AdresseBroadcast}" IsReadOnly="True" Width="160"/>
+                <DataGridTextColumn Header="Nombre d'adresse maximum" Binding="{Binding NombreAdresse}" IsReadOnly="True" Width="160"/>
+                <DataGridTextColumn Header="Pourcentage" Binding="{Binding PourcentageAdresseUtilise, Converter={StaticResource PourcentageUtiliseConverter}}" IsReadOnly="True" Width="80"/>
             </DataGrid.Columns>
             <DataGrid.RowStyle>
                 <Style TargetType="{x:Type DataGridRow}">
