@@ -24,9 +24,6 @@ namespace Utils
             if (prendreLeReste && i < chaine.Length)
                 yield return chaine.Substring(i);
         }
-
-        public static string Toto { get; set; }
-
         #endregion
     }
 }
