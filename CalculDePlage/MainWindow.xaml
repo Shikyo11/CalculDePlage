@@ -7,7 +7,7 @@
     <Grid HorizontalAlignment="Left" Width="517">
         <DataGrid x:Name="dgNbPoste" HorizontalAlignment="Left" Margin="10,10,-541,0" VerticalAlignment="Top" RenderTransformOrigin="-0.561,-3.883" Height="235" Width="1048" AutoGenerateColumns="False" ItemsSource="{Binding Path=ListSousReseau}" CanUserResizeRows="False" CanUserResizeColumns="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nom du sous reseau" Binding="{Binding NomSousReseau}" Width="160" />
+                <DataGridTextColumn Header="Nom du sous reseau" Binding="{Binding NomSousReseau}" Width="159" />
                 <DataGridTextColumn Header="Nombre de postes" Binding="{Binding NombreDePoste}" Width="160"/>
                 <DataGridTextColumn Header="Masque de sous reseau" Binding="{Binding MasqueSousReseau}" Width="160"/>
                 <DataGridTextColumn Header="Ip de départ" Binding="{Binding IpDepart}" Width="160"/>
