@@ -87,6 +87,23 @@ namespace Reseau
             return result;
         }
 
+        public static string GetMasqueInverse(string masque)
+        {
+            string result = "";
+
+            foreach(char c in masque)
+            {
+                if (c == '1')
+                    result += "0";
+                else if (c == '0')
+                    result += "1";
+                else
+                    result += ".";
+            }
+
+            return result;
+        }
+
         public static string OuBinaireByAdresse(string adresseBianire1, string adresseBianire2)
         {
             string result = "";

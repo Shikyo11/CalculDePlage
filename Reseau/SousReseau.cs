@@ -42,15 +42,16 @@ namespace Reseau
                 float nbPoste = -1;
                 if (float.TryParse(value, out nbPoste))
                 {
-                    SetMasque(nbPoste);
+                    _NombreDePoste = value;
+
+                    if (_SetMasque)
+                        SetMasque(nbPoste);
                     SetNombreAdresse();
                 }
                 else
                 {
                     MasqueSousReseau = "";
                 }
-
-                _NombreDePoste = value;
 
                 SetPourcentageUtilise();
 
@@ -70,6 +71,7 @@ namespace Reseau
                 _MasqueSousReseau = value;
 
                 SetAdresseBroadcast();
+                SetNombreDePoste();
 
                 NotifyPropertyChanged();
             }
@@ -145,6 +147,8 @@ namespace Reseau
         private String MasqueSousReseauBinaireInverse { get; set; }
         private String IpDepartBinaire { get; set; }
         private String AdresseBroadcastBinaire { get; set; }
+
+        private bool _SetMasque = true;
 
         #endregion
 
@@ -247,6 +251,27 @@ namespace Reseau
             {
                 PourcentageAdresseUtilise = int.Parse(NombreDePoste) * 100 / int.Parse(NombreAdresse);
             }
+        }
+
+        #endregion
+
+        #region SUB SETTER NOMBRE DE POSTE
+
+        private void SetNombreDePoste()
+        {
+            // UNIQUEMENT SI NOMBRE DE POSTE PAS ENCORE SET
+            if (String.IsNullOrWhiteSpace(NombreDePoste) && !String.IsNullOrWhiteSpace(MasqueSousReseau))
+            {
+                _SetMasque = false;
+
+                MasqueSousReseauBinaire = UtilsReseau.ConvertAdresseDecimalToBinary(MasqueSousReseau);
+                MasqueSousReseauBinaireInverse = UtilsReseau.GetMasqueInverse(MasqueSousReseau);
+                NombreDePoste = NombreAdresse = Math.Pow(2, 32 - Regex.Matches(MasqueSousReseauBinaire, "1", RegexOptions.IgnoreCase).Count).ToString();
+
+                _SetMasque = true;
+            }
+
+            _SetMasque = true;
         }
 
         #endregion

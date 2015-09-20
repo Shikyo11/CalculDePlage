@@ -9,7 +9,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nom du sous reseau" Binding="{Binding NomSousReseau}" />
                 <DataGridTextColumn Header="Nombre de postes" Binding="{Binding NombreDePoste}" />
-                <DataGridTextColumn Header="Masque de sous reseau" Binding="{Binding MasqueSousReseau}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Masque de sous reseau" Binding="{Binding MasqueSousReseau}" />
                 <DataGridTextColumn Header="Ip de départ" Binding="{Binding IpDepart}" />
                 <DataGridTextColumn Header="Adresse de Broadcast" Binding="{Binding AdresseBroadcast}" IsReadOnly="True" />
                 <DataGridTextColumn Header="Nombre d'adresse maximum" Binding="{Binding NombreAdresse}" IsReadOnly="True" />
