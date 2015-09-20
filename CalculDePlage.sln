@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculDePlage", "CalculDePlage\CalculDePlage.csproj", "{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}"
+	ProjectSection(ProjectDependencies) = postProject
+		{484F459D-2631-4561-A719-7DB5ECDC1B48} = {484F459D-2631-4561-A719-7DB5ECDC1B48}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reseau", "Reseau\Reseau.csproj", "{85514673-76EC-4BEA-8848-9A09DFB708A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{484F459D-2631-4561-A719-7DB5ECDC1B48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AD91CE-9B57-4BC7-9F5B-CD5A65ED6828}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{85514673-76EC-4BEA-8848-9A09DFB708A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85514673-76EC-4BEA-8848-9A09DFB708A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85514673-76EC-4BEA-8848-9A09DFB708A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85514673-76EC-4BEA-8848-9A09DFB708A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484F459D-2631-4561-A719-7DB5ECDC1B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484F459D-2631-4561-A719-7DB5ECDC1B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484F459D-2631-4561-A719-7DB5ECDC1B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484F459D-2631-4561-A719-7DB5ECDC1B48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
