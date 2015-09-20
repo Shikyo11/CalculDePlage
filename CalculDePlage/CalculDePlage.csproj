@@ -90,6 +90,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\CalculDePlage.exe.config" />
+    <None Include="bin\Debug\CalculDePlage.vshost.exe.config" />
+    <None Include="bin\Debug\CalculDePlage.vshost.exe.manifest" />
+    <None Include="bin\Release\CalculDePlage.exe.config" />
+    <None Include="bin\Release\CalculDePlage.vshost.exe.config" />
+    <None Include="bin\Release\CalculDePlage.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,6 +110,22 @@
       <Project>{85514673-76ec-4bea-8848-9a09dfb708a0}</Project>
       <Name>Reseau</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CalculDePlage.exe" />
+    <Content Include="bin\Debug\CalculDePlage.pdb" />
+    <Content Include="bin\Debug\CalculDePlage.vshost.exe" />
+    <Content Include="bin\Debug\Reseau.dll" />
+    <Content Include="bin\Debug\Reseau.pdb" />
+    <Content Include="bin\Debug\Utils.dll" />
+    <Content Include="bin\Debug\Utils.pdb" />
+    <Content Include="bin\Release\CalculDePlage.exe" />
+    <Content Include="bin\Release\CalculDePlage.pdb" />
+    <Content Include="bin\Release\CalculDePlage.vshost.exe" />
+    <Content Include="bin\Release\Reseau.dll" />
+    <Content Include="bin\Release\Reseau.pdb" />
+    <Content Include="bin\Release\Utils.dll" />
+    <Content Include="bin\Release\Utils.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
