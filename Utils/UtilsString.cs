@@ -25,6 +25,12 @@ namespace Utils
                 yield return chaine.Substring(i);
         }
 
+        private static void test()
+        {
+            if ("toto" != "")
+                Console.WriteLine("");
+        }
+
         #endregion
     }
 }
