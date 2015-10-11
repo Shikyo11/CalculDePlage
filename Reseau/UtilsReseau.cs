@@ -72,7 +72,7 @@ namespace Reseau
                     List<string> bin = new List<string>();
                     foreach (string d in dec)
                     {
-                        bin.Add(Convert.ToString(Convert.ToInt32(d), 2));
+                        bin.Add(Convert.ToString(Convert.ToInt32(d), 2).PadLeft(8,'0'));
                     }
 
                     if (dec.Count > 0)

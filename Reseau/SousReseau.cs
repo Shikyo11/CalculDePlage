@@ -70,8 +70,8 @@ namespace Reseau
             {
                 _MasqueSousReseau = value;
 
-                SetAdresseBroadcast();
                 SetNombreDePoste();
+                SetAdresseBroadcast();
 
                 NotifyPropertyChanged();
             }
@@ -265,7 +265,7 @@ namespace Reseau
                 _SetMasque = false;
 
                 MasqueSousReseauBinaire = UtilsReseau.ConvertAdresseDecimalToBinary(MasqueSousReseau);
-                MasqueSousReseauBinaireInverse = UtilsReseau.GetMasqueInverse(MasqueSousReseau);
+                MasqueSousReseauBinaireInverse = UtilsReseau.GetMasqueInverse(MasqueSousReseauBinaire);
                 NombreDePoste = NombreAdresse = Math.Pow(2, 32 - Regex.Matches(MasqueSousReseauBinaire, "1", RegexOptions.IgnoreCase).Count).ToString();
 
                 _SetMasque = true;
