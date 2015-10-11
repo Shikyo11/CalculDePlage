@@ -25,7 +25,7 @@ namespace Utils
                 yield return chaine.Substring(i);
         }
 
-        private static void test()
+        private static void tests()
         {
             if ("toto" != "")
                 Console.WriteLine("");
